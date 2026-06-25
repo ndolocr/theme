@@ -1,0 +1,29 @@
+finserve-ui/
+│
+├── login.html
+│
+├── assets/
+│
+│   ├── css/
+│   │     variables.css
+│   │     base.css
+│   │     typography.css
+│   │     layout.css
+│   │     buttons.css
+│   │     forms.css
+│   │     login.css
+│   │     responsive.css
+│   │
+│   ├── js/
+│   │     app.js
+│   │     login.js
+│   │
+│   ├── images/
+│   │
+│   ├── bootstrap/
+│   │
+│   ├── jquery/
+│   │
+│   └── bootstrap-icons/
+│
+└── README.md
