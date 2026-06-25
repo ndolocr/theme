@@ -1,0 +1,371 @@
+/*======================================================================
+    Finserve UI Framework
+    cards.css
+
+    Enterprise Card Components
+======================================================================*/
+
+
+/*==========================================================
+    BASE CARD
+==========================================================*/
+
+.card-fs{
+
+    background:var(--fs-card);
+
+    border:1px solid var(--fs-border);
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:all .25s ease;
+
+}
+
+.card-fs:hover{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+/*==========================================================
+    CARD HEADER
+==========================================================*/
+
+.card-header-fs{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:20px 24px;
+
+    border-bottom:1px solid var(--fs-divider);
+
+}
+
+.card-title{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--fs-heading);
+
+}
+
+.card-subtitle{
+
+    font-size:13px;
+
+    color:var(--fs-text-light);
+
+}
+
+
+/*==========================================================
+    CARD BODY
+==========================================================*/
+
+.card-body-fs{
+
+    padding:24px;
+
+}
+
+
+/*==========================================================
+    CARD FOOTER
+==========================================================*/
+
+.card-footer-fs{
+
+    padding:18px 24px;
+
+    border-top:1px solid var(--fs-divider);
+
+}
+
+
+/*==========================================================
+    LOGIN CARD
+==========================================================*/
+
+.card-login{
+
+    width:100%;
+
+    max-width:460px;
+
+    padding:48px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    border:1px solid var(--fs-border);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/*==========================================================
+    KPI CARD
+==========================================================*/
+
+.card-stat{
+
+    background:#fff;
+
+    border:1px solid var(--fs-border);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.card-stat:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.card-stat-icon{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#FFF5F5;
+
+    color:var(--fs-primary);
+
+    font-size:24px;
+
+}
+
+.card-stat-number{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:var(--fs-heading);
+
+    line-height:1;
+
+    margin-bottom:8px;
+
+}
+
+.card-stat-label{
+
+    font-size:14px;
+
+    color:var(--fs-text-light);
+
+}
+
+
+/*==========================================================
+    FILTER CARD
+==========================================================*/
+
+.card-filter{
+
+    padding:24px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:1px solid var(--fs-border);
+
+}
+
+
+/*==========================================================
+    TABLE CARD
+==========================================================*/
+
+.card-table{
+
+    overflow:hidden;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:1px solid var(--fs-border);
+
+}
+
+
+/*==========================================================
+    CHART CARD
+==========================================================*/
+
+.card-chart{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:1px solid var(--fs-border);
+
+    padding:24px;
+
+    min-height:420px;
+
+}
+
+
+/*==========================================================
+    DETAIL CARD
+==========================================================*/
+
+.card-details{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:1px solid var(--fs-border);
+
+    padding:30px;
+
+}
+
+
+/*==========================================================
+    PROFILE CARD
+==========================================================*/
+
+.card-profile{
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+/*==========================================================
+    EMPTY STATE
+==========================================================*/
+
+.card-empty{
+
+    padding:60px;
+
+    text-align:center;
+
+    color:var(--fs-text-light);
+
+}
+
+
+/*==========================================================
+    STATUS CARD
+==========================================================*/
+
+.card-status{
+
+    border-left:5px solid var(--fs-primary);
+
+}
+
+
+/*==========================================================
+    CARD GRID
+==========================================================*/
+
+.card-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.card-grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.card-grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.card-grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+
+/*==========================================================
+    RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.card-grid-4{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.card-grid-3{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card-grid-2,
+.card-grid-3,
+.card-grid-4{
+
+    grid-template-columns:1fr;
+
+}
+
+.card-login{
+
+    padding:32px;
+
+}
+
+}
