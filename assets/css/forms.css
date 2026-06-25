@@ -1,0 +1,366 @@
+/*==================================================================
+    Finserve UI Framework
+    forms.css
+
+    Enterprise Form Components
+===================================================================*/
+
+
+/*==============================================================
+    FORM GROUP
+==============================================================*/
+
+.fs-form-group{
+    margin-bottom:24px;
+}
+
+
+/*==============================================================
+    LABEL
+==============================================================*/
+
+.fs-label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--fs-heading);
+
+}
+
+
+/*==============================================================
+    REQUIRED
+==============================================================*/
+
+.required{
+
+    color:var(--fs-danger);
+
+}
+
+
+/*==============================================================
+    FORM CONTROL
+==============================================================*/
+
+.form-control-fs{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 16px;
+
+    border:1px solid var(--fs-border);
+
+    border-radius:12px;
+
+    background:#fff;
+
+    color:var(--fs-text);
+
+    font-size:14px;
+
+    transition:var(--transition);
+
+}
+
+
+/*==============================================================
+    PLACEHOLDER
+==============================================================*/
+
+.form-control-fs::placeholder{
+
+    color:#9CA3AF;
+
+}
+
+
+/*==============================================================
+    FOCUS
+==============================================================*/
+
+.form-control-fs:focus{
+
+    border-color:var(--fs-secondary);
+
+    box-shadow:0 0 0 4px rgba(52,101,174,.12);
+
+}
+
+
+/*==============================================================
+    DISABLED
+==============================================================*/
+
+.form-control-fs:disabled{
+
+    background:#F9FAFB;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==============================================================
+    TEXTAREA
+==============================================================*/
+
+.textarea-fs{
+
+    min-height:140px;
+
+    padding:16px;
+
+    resize:vertical;
+
+}
+
+
+/*==============================================================
+    SELECT
+==============================================================*/
+
+.select-fs{
+
+    appearance:none;
+
+    cursor:pointer;
+
+    background-image:url("../images/icons/chevron-down.svg");
+
+    background-repeat:no-repeat;
+
+    background-position:right 18px center;
+
+}
+
+
+/*==============================================================
+    INPUT GROUP
+==============================================================*/
+
+.fs-input-group{
+
+    position:relative;
+
+}
+
+.fs-input-group i{
+
+    position:absolute;
+
+    left:16px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#94A3B8;
+
+}
+
+.fs-input-group .form-control-fs{
+
+    padding-left:46px;
+
+}
+
+
+/*==============================================================
+    PASSWORD TOGGLE
+==============================================================*/
+
+.password-toggle{
+
+    position:absolute;
+
+    right:16px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#94A3B8;
+
+}
+
+
+/*==============================================================
+    CHECKBOX
+==============================================================*/
+
+.checkbox-fs{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.checkbox-fs input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:var(--fs-primary);
+
+}
+
+
+/*==============================================================
+    RADIO
+==============================================================*/
+
+.radio-fs{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.radio-fs input{
+
+    accent-color:var(--fs-primary);
+
+}
+
+
+/*==============================================================
+    SWITCH
+==============================================================*/
+
+.switch{
+
+    position:relative;
+
+    display:inline-block;
+
+    width:52px;
+
+    height:28px;
+
+}
+
+.switch input{
+
+    display:none;
+
+}
+
+.slider{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#CBD5E1;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.slider:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:22px;
+
+    height:22px;
+
+    left:3px;
+
+    top:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.25s;
+
+}
+
+.switch input:checked + .slider{
+
+    background:var(--fs-primary);
+
+}
+
+.switch input:checked + .slider:before{
+
+    transform:translateX(24px);
+
+}
+
+
+/*==============================================================
+    VALIDATION
+==============================================================*/
+
+.is-valid{
+
+    border-color:var(--fs-success)!important;
+
+}
+
+.is-invalid{
+
+    border-color:var(--fs-danger)!important;
+
+}
+
+
+/*==============================================================
+    HELP TEXT
+==============================================================*/
+
+.form-help{
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    color:var(--fs-text-light);
+
+}
+
+.form-error{
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    color:var(--fs-danger);
+
+}
+
+.form-success{
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    color:var(--fs-success);
+
+}
