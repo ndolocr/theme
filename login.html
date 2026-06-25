@@ -4,27 +4,29 @@
 <head>
 
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Finserve Screening Platform</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap/css/bootstrap.min.css">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap-icons/bootstrap-icons.css">
 
-    <!-- Framework -->
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/utilities.css">
-    <link rel="stylesheet" href="assets/css/buttons.css">
-    <link rel="stylesheet" href="assets/css/forms.css">
-    <link rel="stylesheet" href="assets/css/cards.css">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/core/variables.css">
+    <link rel="stylesheet" href="assets/css/core/base.css">
+    <link rel="stylesheet" href="assets/css/core/typography.css">
+    <link rel="stylesheet" href="assets/css/core/utilities.css">
+
+    <!-- Components -->
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/forms.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+
+    <!-- Page -->
+    <link rel="stylesheet" href="assets/css/pages/login.css">
 
 </head>
 
@@ -32,195 +34,131 @@
 
 <div class="login-page">
 
-    <!-- Left Panel -->
+    <!-- =====================================================
+         LEFT BRANDING PANEL
+    ====================================================== -->
 
-    <div class="login-brand">
+    <aside class="login-brand">
 
         <div class="brand-content">
+            <h1 class="brand-title">Financial Crime Screening Platform</h1>
 
-            <img
-                src="assets/images/logo-white.png"
-                class="brand-logo"
-                alt="Finserve">
-
-            <h1>
-
-                Financial Crime<br>
-
-                Screening Platform
-
-            </h1>
-
-            <p>
-
-                Secure, scalable and enterprise-grade
-                sanctions screening solution.
-
+            <p class="brand-description">
+                Enterprise-grade compliance platform for AML,
+                Sanctions, PEP and Adverse Media Screening.
             </p>
 
-            <ul class="feature-list">
-
-                <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    Name Screening
-                </li>
-
-                <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    Sanctions Screening
-                </li>
-
-                <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    PEP Screening
-                </li>
-
-                <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    Adverse Media
-                </li>
-
-                <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    Case Management
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <!-- Right Panel -->
-
-    <div class="login-container">
-
-        <div class="card-login">
-
-            <img
-                src="assets/images/logo.png"
-                class="login-logo">
-
-            <h2 class="login-title">
-
-                Welcome Back
-
-            </h2>
-
-            <p class="login-subtitle">
-
-                Sign in to continue.
-
-            </p>
-
-            <form>
-
-                <div class="fs-form-group">
-
-                    <label class="fs-label">
-
-                        Email Address
-
-                    </label>
-
-                    <input
-                        type="email"
-                        class="form-control-fs"
-                        placeholder="Enter email">
-
-                </div>
-
-                <div class="fs-form-group">
-
-                    <label class="fs-label">
-
-                        Password
-
-                    </label>
-
-                    <div class="fs-input-group">
-
-                        <input
-                            type="password"
-                            class="form-control-fs"
-                            id="password">
-
-                        <span
-                            class="password-toggle">
-
-                            <i class="bi bi-eye"></i>
-
-                        </span>
-
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="bi bi-search"></i>
+                    <div>
+                        <strong>Name Screening</strong>
+                        <span>Screen customers instantly.</span>
                     </div>
-
                 </div>
 
-                <div
-                    class="d-flex justify-content-between align-items-center mb-4">
-
-                    <div class="checkbox-fs">
-
-                        <input type="checkbox">
-
-                        Remember Me
-
+                <div class="feature-item">
+                    <i class="bi bi-shield-check"></i>
+                    <div>
+                        <strong>Sanctions Screening</strong>
+                        <span>OFAC • UN • EU • UK Lists</span>
                     </div>
-
-                    <a href="#">
-
-                        Forgot Password?
-
-                    </a>
-
                 </div>
 
-                <button
-                    class="btn-fs btn-fs-primary btn-fs-block">
-
-                    Sign In
-
-                </button>
-
-                <div class="divider">
-
-                    OR
-
+                <div class="feature-item">
+                    <i class="bi bi-globe2"></i>
+                    <div>
+                        <strong>PEP & Adverse Media</strong>
+                        <span>Monitor global exposure.</span>
+                    </div>
                 </div>
 
-                <button
-                    class="btn-fs btn-fs-outline btn-fs-block">
-
-                    <img
-                        src="assets/images/microsoft.png"
-                        width="20">
-
-                    Sign in with Microsoft
-
-                </button>
-
-            </form>
-
-            <div class="login-footer">
-
-                Version 1.0
-
-                <br>
-
-                © 2026 Finserve Africa
-
+                <div class="feature-item">
+                    <i class="bi bi-briefcase"></i>
+                    <div>
+                        <strong>Case Management</strong>
+                        <span>Review and resolve alerts.</span>
+                    </div>
+                </div>
             </div>
 
         </div>
 
-    </div>
+    </aside>
 
+    <!-- =====================================================
+         LOGIN PANEL
+    ====================================================== -->
+
+    <main class="login-container">
+        <div class="card-login">
+            <img src="assets/images/logo.svg" class="login-logo" alt="Finserve Logo">
+
+            <h2 class="login-title"> Welcome Back </h2>
+
+            <p class="login-subtitle"> Sign in to continue to your account.</p>
+
+            <form id="loginForm"novalidate>
+                <!-- Email -->
+                <div class="fs-form-group">
+                    <label class="fs-label" for="email"> Email Address </label>
+
+                    <div class="fs-input-group">
+                        <i class="bi bi-envelope"></i>
+                        <input id="email" name="email" type="email" class="form-control-fs" placeholder="Enter your email" autocomplete="username" autofocusrequired>
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="fs-form-group">
+                    <label class="fs-label" for="password"> Password </label>
+
+                    <div class="fs-input-group">
+                        <i class="bi bi-lock"></i>
+                        <input id="password" name="password" type="password" class="form-control-fs" placeholder="Enter your password" autocomplete="current-password" required>
+
+                        <button type="button" class="password-toggle" aria-label="Show Password"> <i class="bi bi-eye"></i> </button>
+                    </div>
+                </div>
+
+                <!-- Remember -->
+                <div class="login-options">
+                    <label class="checkbox-fs">
+                        <input type="checkbox" name="remember">
+                        <span>Remember Me</span>
+                    </label>
+                    
+                    <a href="#"> Forgot Password? </a>
+                </div>
+
+                <!-- Login -->
+                <button type="submit" class="btn-fs btn-fs-primary btn-fs-block">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    Sign In
+                </button>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- Microsoft Login -->
+                <button type="button" class="btn-fs btn-fs-outline btn-fs-block">
+                    <img src="assets/images/microsoft.png" width="18" alt="Microsoft">
+                    Sign in with Microsoft
+                </button>
+
+            </form>
+
+            <footer class="login-footer">
+                <small> Version 1.0.0 </small>
+                <span> © 2026 Finserve Africa </span>
+            </footer>
+        </div>
+    </main>
 </div>
 
-<script src="assets/jquery/jquery-3.7.1.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-4.0.0.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/js/login.js"></script>
-
 </body>
-
 </html>
