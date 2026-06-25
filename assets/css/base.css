@@ -1,0 +1,487 @@
+/*==================================================================
+    Finserve Screening Platform
+    Enterprise UI Framework
+
+    File: base.css
+    Description:
+    Global Styles
+==================================================================*/
+
+/*===============================================================
+    GOOGLE FONT
+===============================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/*===============================================================
+    RESET
+===============================================================*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/*===============================================================
+    HTML
+===============================================================*/
+
+html{
+
+    font-size:16px;
+
+    scroll-behavior:smooth;
+
+    -webkit-text-size-adjust:100%;
+
+}
+
+
+/*===============================================================
+    BODY
+===============================================================*/
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:400;
+
+    color:var(--fs-text);
+
+    background:var(--fs-background);
+
+    line-height:1.6;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+
+/*===============================================================
+    HEADINGS
+===============================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--fs-heading);
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    line-height:1.3;
+
+}
+
+h1{font-size:2rem;}
+
+h2{font-size:1.75rem;}
+
+h3{font-size:1.5rem;}
+
+h4{font-size:1.25rem;}
+
+h5{font-size:1.125rem;}
+
+h6{font-size:1rem;}
+
+
+/*===============================================================
+    PARAGRAPH
+===============================================================*/
+
+p{
+
+    margin-bottom:1rem;
+
+    color:var(--fs-text-light);
+
+}
+
+
+/*===============================================================
+    LINKS
+===============================================================*/
+
+a{
+
+    color:var(--fs-secondary);
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+a:hover{
+
+    color:var(--fs-primary);
+
+}
+
+
+/*===============================================================
+    LISTS
+===============================================================*/
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+
+/*===============================================================
+    IMAGES
+===============================================================*/
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+/*===============================================================
+    BUTTONS
+===============================================================*/
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+
+/*===============================================================
+    INPUTS
+===============================================================*/
+
+input,
+select,
+textarea{
+
+    outline:none;
+
+    border:none;
+
+    background:none;
+
+    font-family:inherit;
+
+}
+
+
+/*===============================================================
+    TABLE
+===============================================================*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+/*===============================================================
+    HR
+===============================================================*/
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--fs-divider);
+
+}
+
+
+/*===============================================================
+    SELECTION
+===============================================================*/
+
+::selection{
+
+    background:var(--fs-primary);
+
+    color:#fff;
+
+}
+
+
+/*===============================================================
+    SCROLLBAR
+===============================================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f4f4f4;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#cfcfcf;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--fs-primary);
+
+}
+
+
+/*===============================================================
+    PAGE CONTAINER
+===============================================================*/
+
+.fs-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/*===============================================================
+    MAIN CONTENT
+===============================================================*/
+
+.fs-main{
+
+    flex:1;
+
+    padding:30px;
+
+}
+
+
+/*===============================================================
+    CARDS
+===============================================================*/
+
+.fs-card{
+
+    background:var(--fs-card);
+
+    border:1px solid var(--fs-border);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/*===============================================================
+    SECTION TITLE
+===============================================================*/
+
+.fs-section-title{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:var(--fs-heading);
+
+    margin-bottom:20px;
+
+}
+
+
+/*===============================================================
+    SMALL TEXT
+===============================================================*/
+
+.fs-small{
+
+    font-size:13px;
+
+    color:var(--fs-text-light);
+
+}
+
+
+/*===============================================================
+    TEXT UTILITIES
+===============================================================*/
+
+.text-muted{
+
+    color:var(--fs-text-light)!important;
+
+}
+
+.text-danger{
+
+    color:var(--fs-danger)!important;
+
+}
+
+.text-success{
+
+    color:var(--fs-success)!important;
+
+}
+
+.text-warning{
+
+    color:var(--fs-warning)!important;
+
+}
+
+.text-primary{
+
+    color:var(--fs-primary)!important;
+
+}
+
+
+/*===============================================================
+    BACKGROUND UTILITIES
+===============================================================*/
+
+.bg-primary-soft{
+
+    background:#FFF4F4;
+
+}
+
+.bg-success-soft{
+
+    background:#F1FDF5;
+
+}
+
+.bg-warning-soft{
+
+    background:#FFF8EB;
+
+}
+
+.bg-info-soft{
+
+    background:#EEF6FF;
+
+}
+
+
+/*===============================================================
+    SHADOW UTILITIES
+===============================================================*/
+
+.shadow-sm{
+
+    box-shadow:var(--shadow-sm)!important;
+
+}
+
+.shadow-md{
+
+    box-shadow:var(--shadow-md)!important;
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-lg)!important;
+
+}
+
+
+/*===============================================================
+    BORDER RADIUS
+===============================================================*/
+
+.rounded-sm{
+
+    border-radius:var(--radius-sm)!important;
+
+}
+
+.rounded-md{
+
+    border-radius:var(--radius-md)!important;
+
+}
+
+.rounded-lg{
+
+    border-radius:var(--radius-lg)!important;
+
+}
+
+.rounded-xl{
+
+    border-radius:var(--radius-xl)!important;
+
+}
+
+
+/*===============================================================
+    TRANSITIONS
+===============================================================*/
+
+.transition{
+
+    transition:var(--transition);
+
+}
+
+
+/*===============================================================
+    FOCUS RING
+===============================================================*/
+
+:focus-visible{
+
+    outline:2px solid rgba(52,101,174,.35);
+
+    outline-offset:2px;
+
+}
