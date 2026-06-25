@@ -1,0 +1,122 @@
+/*=========================================================================
+    Finserve UI Framework
+    navbar.css
+==========================================================================*/
+
+.fs-navbar{
+
+    height:72px;
+
+    background:#FFFFFF;
+
+    border-bottom:1px solid var(--fs-border);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 30px;
+
+}
+
+
+/*==========================================================
+    SEARCH
+==========================================================*/
+
+.nav-search{
+
+    width:420px;
+
+    position:relative;
+
+}
+
+.nav-search input{
+
+    width:100%;
+
+    height:46px;
+
+    border:1px solid var(--fs-border);
+
+    border-radius:12px;
+
+    padding-left:45px;
+
+}
+
+.nav-search i{
+
+    position:absolute;
+
+    left:16px;
+
+    top:15px;
+
+    color:#94A3B8;
+
+}
+
+
+/*==========================================================
+    RIGHT
+==========================================================*/
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.nav-icon{
+
+    width:44px;
+
+    height:44px;
+
+    border-radius:12px;
+
+    border:1px solid var(--fs-border);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+}
+
+.nav-icon:hover{
+
+    background:#F9FAFB;
+
+}
+
+.user-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.user-profile img{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+}
