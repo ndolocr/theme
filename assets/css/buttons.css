@@ -1,0 +1,337 @@
+/*=========================================================
+    Finserve UI Framework
+    buttons.css
+
+    Enterprise Button System
+==========================================================*/
+
+
+/*=========================================================
+    BASE BUTTON
+==========================================================*/
+
+.btn-fs{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    height:46px;
+
+    padding:0 22px;
+
+    border-radius:12px;
+
+    border:1px solid transparent;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+    white-space:nowrap;
+
+    text-decoration:none;
+
+}
+
+
+/*=========================================================
+    PRIMARY
+==========================================================*/
+
+.btn-fs-primary{
+
+    background:var(--fs-primary);
+
+    color:#fff;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.btn-fs-primary:hover{
+
+    background:var(--fs-primary-dark);
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+/*=========================================================
+    SECONDARY
+==========================================================*/
+
+.btn-fs-secondary{
+
+    background:var(--fs-secondary);
+
+    color:#fff;
+
+}
+
+.btn-fs-secondary:hover{
+
+    background:#29538f;
+
+    color:#fff;
+
+}
+
+
+/*=========================================================
+    OUTLINE
+==========================================================*/
+
+.btn-fs-outline{
+
+    background:#fff;
+
+    color:var(--fs-text);
+
+    border:1px solid var(--fs-border);
+
+}
+
+.btn-fs-outline:hover{
+
+    background:#F8F9FC;
+
+    border-color:var(--fs-secondary);
+
+}
+
+
+/*=========================================================
+    LIGHT
+==========================================================*/
+
+.btn-fs-light{
+
+    background:#F4F6F9;
+
+    color:var(--fs-text);
+
+}
+
+.btn-fs-light:hover{
+
+    background:#EAEFF5;
+
+}
+
+
+/*=========================================================
+    SUCCESS
+==========================================================*/
+
+.btn-fs-success{
+
+    background:var(--fs-success);
+
+    color:#fff;
+
+}
+
+.btn-fs-success:hover{
+
+    filter:brightness(.95);
+
+}
+
+
+/*=========================================================
+    WARNING
+==========================================================*/
+
+.btn-fs-warning{
+
+    background:var(--fs-warning);
+
+    color:#fff;
+
+}
+
+.btn-fs-warning:hover{
+
+    filter:brightness(.95);
+
+}
+
+
+/*=========================================================
+    DANGER
+==========================================================*/
+
+.btn-fs-danger{
+
+    background:var(--fs-danger);
+
+    color:#fff;
+
+}
+
+.btn-fs-danger:hover{
+
+    filter:brightness(.95);
+
+}
+
+
+/*=========================================================
+    ICON BUTTON
+==========================================================*/
+
+.btn-fs-icon{
+
+    width:44px;
+
+    height:44px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#fff;
+
+    border:1px solid var(--fs-border);
+
+}
+
+.btn-fs-icon:hover{
+
+    background:#F9FAFB;
+
+}
+
+
+/*=========================================================
+    CIRCLE
+==========================================================*/
+
+.btn-fs-circle{
+
+    width:44px;
+
+    height:44px;
+
+    border-radius:50%;
+
+}
+
+
+/*=========================================================
+    SMALL
+==========================================================*/
+
+.btn-fs-sm{
+
+    height:36px;
+
+    padding:0 18px;
+
+    font-size:13px;
+
+}
+
+
+/*=========================================================
+    LARGE
+==========================================================*/
+
+.btn-fs-lg{
+
+    height:54px;
+
+    padding:0 32px;
+
+    font-size:15px;
+
+}
+
+
+/*=========================================================
+    FULL WIDTH
+==========================================================*/
+
+.btn-fs-block{
+
+    width:100%;
+
+}
+
+
+/*=========================================================
+    DISABLED
+==========================================================*/
+
+.btn-fs:disabled{
+
+    opacity:.55;
+
+    cursor:not-allowed;
+
+    pointer-events:none;
+
+}
+
+
+/*=========================================================
+    LOADING
+==========================================================*/
+
+.btn-loading{
+
+    position:relative;
+
+    pointer-events:none;
+
+}
+
+.btn-loading::after{
+
+    content:"";
+
+    width:18px;
+
+    height:18px;
+
+    margin-left:10px;
+
+    border:2px solid rgba(255,255,255,.4);
+
+    border-top-color:#fff;
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
