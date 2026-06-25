@@ -1,0 +1,379 @@
+/*====================================================================
+    Finserve UI Framework
+    typography.css
+
+    Enterprise Typography System
+====================================================================*/
+
+
+/*====================================================================
+    FONT FAMILY
+====================================================================*/
+
+body{
+
+    font-family:"Inter",
+                "Segoe UI",
+                Helvetica,
+                Arial,
+                sans-serif;
+
+}
+
+
+/*====================================================================
+    DISPLAY HEADINGS
+====================================================================*/
+
+.display-1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    line-height:58px;
+
+    color:var(--fs-heading);
+
+}
+
+.display-2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    line-height:48px;
+
+    color:var(--fs-heading);
+
+}
+
+
+/*====================================================================
+    PAGE TITLE
+====================================================================*/
+
+.page-title{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:var(--fs-heading);
+
+    margin-bottom:8px;
+
+}
+
+
+/*====================================================================
+    PAGE SUBTITLE
+====================================================================*/
+
+.page-subtitle{
+
+    font-size:15px;
+
+    color:var(--fs-text-light);
+
+    margin-bottom:30px;
+
+}
+
+
+/*====================================================================
+    HEADINGS
+====================================================================*/
+
+h1{
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+h4{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+h5{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+h6{
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+
+/*====================================================================
+    TEXT
+====================================================================*/
+
+.text-lg{
+
+    font-size:18px;
+
+}
+
+.text-md{
+
+    font-size:16px;
+
+}
+
+.text-sm{
+
+    font-size:14px;
+
+}
+
+.text-xs{
+
+    font-size:12px;
+
+}
+
+
+/*====================================================================
+    FONT WEIGHTS
+====================================================================*/
+
+.fw-light{
+
+    font-weight:300;
+
+}
+
+.fw-normal{
+
+    font-weight:400;
+
+}
+
+.fw-medium{
+
+    font-weight:500;
+
+}
+
+.fw-semibold{
+
+    font-weight:600;
+
+}
+
+.fw-bold{
+
+    font-weight:700;
+
+}
+
+
+/*====================================================================
+    COLORS
+====================================================================*/
+
+.text-primary{
+
+    color:var(--fs-primary)!important;
+
+}
+
+.text-secondary{
+
+    color:var(--fs-secondary)!important;
+
+}
+
+.text-muted{
+
+    color:var(--fs-text-light)!important;
+
+}
+
+.text-success{
+
+    color:var(--fs-success)!important;
+
+}
+
+.text-warning{
+
+    color:var(--fs-warning)!important;
+
+}
+
+.text-danger{
+
+    color:var(--fs-danger)!important;
+
+}
+
+
+/*====================================================================
+    CARD TITLES
+====================================================================*/
+
+.card-title{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--fs-heading);
+
+}
+
+.card-subtitle{
+
+    font-size:13px;
+
+    color:var(--fs-text-light);
+
+}
+
+
+/*====================================================================
+    TABLES
+====================================================================*/
+
+.table-title{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.table-caption{
+
+    font-size:13px;
+
+    color:var(--fs-text-light);
+
+}
+
+
+/*====================================================================
+    NAVIGATION
+====================================================================*/
+
+.sidebar-title{
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    font-weight:700;
+
+    color:#8A94A6;
+
+}
+
+.sidebar-link{
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.navbar-title{
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+/*====================================================================
+    BUTTONS
+====================================================================*/
+
+.btn{
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+/*====================================================================
+    LABELS
+====================================================================*/
+
+label{
+
+    font-size:14px;
+
+    font-weight:500;
+
+    color:var(--fs-heading);
+
+}
+
+
+/*====================================================================
+    FORM HELP TEXT
+====================================================================*/
+
+.form-text{
+
+    font-size:12px;
+
+}
+
+
+/*====================================================================
+    LOGIN PAGE
+====================================================================*/
+
+.login-title{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.login-subtitle{
+
+    font-size:15px;
+
+    color:var(--fs-text-light);
+
+}
