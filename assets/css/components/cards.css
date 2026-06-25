@@ -140,20 +140,21 @@
 }
 
 .card-stat:hover{
-
     transform:translateY(-4px);
-
-    box-shadow:var(--shadow-md);
-
-}
+    border-color:var(--fs-primary);
+    box-shadow:var(--shadow-md);}
 
 .card-stat-icon{
 
-    width:56px;
+    width:60px;
 
-    height:56px;
+    height:60px;
 
-    border-radius:16px;
+    border-radius:18px;
+
+    background:#FFF3F3;
+
+    /* border-radius:16px; */
 
     display:flex;
 
@@ -161,7 +162,7 @@
 
     justify-content:center;
 
-    background:#FFF5F5;
+    /* background:#FFF5F5; */
 
     color:var(--fs-primary);
 
@@ -369,3 +370,4 @@
 }
 
 }
+

@@ -1,0 +1,163 @@
+/*==============================================================
+    DASHBOARD PAGE
+==============================================================*/
+.fs-main{
+    background:#F7F9FC;
+    min-height:100vh;}
+
+/*==============================================================
+    BREADCRUMB
+==============================================================*/
+.breadcrumb-fs{
+    margin-bottom:18px;
+    font-size:13px;
+    color:#94A3B8;}
+
+/*==============================================================
+    PAGE HEADER
+==============================================================*/
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:28px;}
+
+.page-title{
+    font-size:34px;
+    font-weight:700;
+    color:var(--fs-heading);
+    margin-bottom:8px;}
+
+.page-subtitle{
+    font-size:15px;
+    color:#64748B;
+    margin:0;}
+
+/*==============================================================
+    KPI CARDS
+==============================================================*/
+.card-stat{
+    min-height:145px;
+    transition:all .25s ease;
+    cursor:pointer;}
+
+.card-stat:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 40px rgba(0,0,0,.08);}
+
+.card-stat-number{
+    margin-top:12px;
+    margin-bottom:10px;}
+
+/*==============================================================
+    CHARTS
+==============================================================*/
+.card-chart{height:100%;}
+.card-chart canvas{width:100% !important;}
+
+/*==============================================================
+    TABLE
+==============================================================*/
+.table-fs tbody tr{transition:.2s;}
+.table-fs tbody tr:hover{background:#F9FBFD;}
+.table-action{cursor:pointer;}
+
+/*==============================================================
+    TIMELINE
+==============================================================*/
+.timeline-item{
+    display:flex;
+    gap:16px;
+    position:relative;
+    padding-bottom:28px;}
+
+.timeline-item:last-child{padding-bottom:0;}
+.timeline-dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    margin-top:6px;
+    flex-shrink:0;}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:6px;
+    top:18px;
+    width:2px;
+    height:calc(100% - 10px);
+    background:#E5E7EB;}
+
+.timeline-item:last-child::before{display:none;}
+
+/*==============================================================
+    SYSTEM HEALTH
+==============================================================*/
+.system-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px solid #F1F5F9;}
+.system-row:last-child{border-bottom:none;}
+
+/*==============================================================
+    WORK QUEUE
+==============================================================*/
+
+.queue-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid #F1F5F9;}
+.queue-item:last-child{border-bottom:none;}
+
+/*==============================================================
+    PROGRESS BARS
+==============================================================*/
+.progress-fs{
+    height:8px;
+    border-radius:30px;
+    background:#EEF2F7;
+    overflow:hidden;}
+
+.progress-fs .progress-bar{border-radius:30px;}
+
+/*==============================================================
+    STATUS COLORS
+==============================================================*/
+.status-online{color:#16A34A;}
+.status-warning{color:#D97706;}
+.status-offline{color:#DC2626;}
+
+/*==============================================================
+    ANIMATION
+==============================================================*/
+.card-stat,
+.card-chart,
+.card-details,
+.card-table{animation:fadeUp .45s ease;}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);}
+
+    to{
+        opacity:1;
+        transform:none;}}
+
+/*==============================================================
+    RESPONSIVE
+==============================================================*/
+@media(max-width:1200px){
+    .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;}}
+
+@media(max-width:768px){
+    .page-title{font-size:28px;}
+    .page-actions{width:100%;}
+    .page-actions .btn-fs{width:100%;}}

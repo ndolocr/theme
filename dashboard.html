@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Dashboard | Finserve Screening Platform
+
+    </title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet"
+          href="assets/css/vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+          href="assets/css/vendor/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- Core -->
+
+    <link rel="stylesheet" href="assets/css/core/variables.css">
+    <link rel="stylesheet" href="assets/css/core/base.css">
+    <link rel="stylesheet" href="assets/css/core/typography.css">
+    <link rel="stylesheet" href="assets/css/core/utilities.css">
+
+    <!-- Components -->
+
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/components/forms.css">
+    <link rel="stylesheet" href="assets/css/components/tables.css">
+
+    <!-- Layout -->
+
+    <link rel="stylesheet" href="assets/css/layout/layout.css">
+    <link rel="stylesheet" href="assets/css/layout/sidebar.css">
+    <link rel="stylesheet" href="assets/css/layout/navbar.css">
+
+    <!-- Dashboard -->
+
+    <link rel="stylesheet" href="assets/css/pages/dashboard.css">
+
+</head>
+
+<body>
+    <div class="fs-app">
+        <!-- ==========================================
+                SIDEBAR
+        =========================================== -->
+        <aside class="fs-sidebar">
+            <div class="sidebar-logo">
+                <img src="assets/images/logos/logo.svg" alt="Finserve">
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="sidebar-title"> Main Menu</div>
+                <a href="#" class="sidebar-link active"> <i class="bi bi-grid-fill"></i> <span>Dashboard</span></a>
+
+                <div class="sidebar-title"> Screening </div>
+                <a href="#" class="sidebar-link"><i class="bi bi-search"></i> <span>Name Screening</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-people"></i> <span>Batch Screening</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-building"></i> <span>Entity Screening</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-plug"></i> <span>API Screening</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-clock-history"></i> <span>Screening History</span> </a>
+
+                <div class="sidebar-title">Investigation </div>
+                <a href="#" class="sidebar-link"> <i class="bi bi-folder2-open"></i> <span>Cases</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-bell"></i> <span>Alerts</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-bar-chart"></i> <span>Reports</span> </a>
+
+                <div class="sidebar-title"> Administration </div>
+                <a href="#" class="sidebar-link"> <i class="bi bi-people-fill"></i> <span>Users</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-shield-lock"></i> <span>Roles & Permissions</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-journal-text"></i> <span>Audit Logs</span> </a>
+                <a href="#" class="sidebar-link"> <i class="bi bi-gear"></i> <span>System Settings</span> </a>
+
+            </div>
+
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link"> <i class="bi bi-box-arrow-left"></i> <span>Logout</span></a>
+            </div>
+
+        </aside>
+
+        <!-- ==========================================
+                MAIN CONTENT
+        =========================================== -->
+
+        <div class="fs-content">
+
+            <!-- ======================================
+                    NAVBAR
+            ======================================= -->
+            <header class="fs-navbar">
+                <div class="nav-left">
+                    <button class="btn-fs btn-fs-light btn-sidebar-toggle"> <i class="bi bi-list"></i></button>
+
+                    <div class="nav-search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Search requests, customers, cases...">
+                    </div>
+
+                </div>
+
+                <div class="nav-right">
+
+                    <button class="nav-icon">
+
+                        <i class="bi bi-bell"></i>
+
+                    </button>
+
+                    <button class="nav-icon">
+
+                        <i class="bi bi-gear"></i>
+
+                    </button>
+
+                    <div class="user-profile">
+
+                        <img
+                            src="assets/images/avatar.png"
+                            alt="User">
+
+                        <div>
+
+                            <strong>
+
+                                Raphael Ndolo
+
+                            </strong>
+
+                            <small>
+
+                                Compliance Analyst
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- ======================================
+                    MAIN PAGE
+            ======================================= -->
+
+            <main class="fs-main">
+
+                <div class="fs-container">
+                    <!-- =====================================================
+        BREADCRUMB
+    ====================================================== -->
+
+    <nav class="breadcrumb-fs">
+
+        <span>Dashboard</span>
+
+    </nav>
+
+
+    <!-- =====================================================
+        PAGE HEADER
+    ====================================================== -->
+
+    <div class="page-header">
+
+        <div>
+
+            <h1 class="page-title">
+
+                Good Morning, Raphael 👋
+
+            </h1>
+
+            <p class="page-subtitle">
+
+                Welcome back to the Financial Crime Screening Platform.
+                Here's what's happening today.
+
+            </p>
+
+        </div>
+
+        <div class="page-actions">
+
+            <button class="btn-fs btn-fs-outline">
+
+                <i class="bi bi-upload"></i>
+
+                Batch Upload
+
+            </button>
+
+            <button class="btn-fs btn-fs-primary">
+
+                <i class="bi bi-plus-circle"></i>
+
+                New Screening
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+        KPI CARDS
+    ====================================================== -->
+
+    <div class="row g-4 mb-4">
+
+        <!-- Card 1 -->
+
+        <div class="col-xl-3 col-lg-6">
+
+            <div class="card-stat">
+
+                <div>
+
+                    <div class="card-stat-label">
+
+                        Today's Screenings
+
+                    </div>
+
+                    <div class="card-stat-number">
+
+                        4,523
+
+                    </div>
+
+                    <small class="text-success">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                        14% higher than yesterday
+
+                    </small>
+
+                </div>
+
+                <div class="card-stat-icon">
+
+                    <i class="bi bi-search"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+
+        <div class="col-xl-3 col-lg-6">
+
+            <div class="card-stat">
+
+                <div>
+
+                    <div class="card-stat-label">
+
+                        Pending Matches
+
+                    </div>
+
+                    <div class="card-stat-number">
+
+                        182
+
+                    </div>
+
+                    <small class="text-warning">
+
+                        Awaiting analyst review
+
+                    </small>
+
+                </div>
+
+                <div class="card-stat-icon">
+
+                    <i class="bi bi-exclamation-circle"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+
+        <div class="col-xl-3 col-lg-6">
+
+            <div class="card-stat">
+
+                <div>
+
+                    <div class="card-stat-label">
+
+                        High Risk Matches
+
+                    </div>
+
+                    <div class="card-stat-number">
+
+                        27
+
+                    </div>
+
+                    <small class="text-danger">
+
+                        Immediate attention required
+
+                    </small>
+
+                </div>
+
+                <div class="card-stat-icon">
+
+                    <i class="bi bi-shield-fill-exclamation"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 4 -->
+
+        <div class="col-xl-3 col-lg-6">
+
+            <div class="card-stat">
+
+                <div>
+
+                    <div class="card-stat-label">
+
+                        Open Cases
+
+                    </div>
+
+                    <div class="card-stat-number">
+
+                        91
+
+                    </div>
+
+                    <small class="text-primary">
+
+                        Currently under investigation
+
+                    </small>
+
+                </div>
+
+                <div class="card-stat-icon">
+
+                    <i class="bi bi-folder2-open"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+        ANALYTICS
+    ====================================================== -->
+
+    <div class="row g-4 mb-4">
+
+        <!-- ==========================================
+            SCREENING TREND
+        =========================================== -->
+
+        <div class="col-xl-8">
+
+            <div class="card-chart">
+
+                <div class="card-header-fs">
+
+                    <div>
+
+                        <h5 class="card-title">
+
+                            Screening Trend
+
+                        </h5>
+
+                        <small class="card-subtitle">
+
+                            Daily screening requests over the last 30 days
+
+                        </small>
+
+                    </div>
+
+                    <select class="form-control-fs" style="width:170px;">
+
+                        <option>Last 7 Days</option>
+                        <option selected>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+
+                    </select>
+
+                </div>
+
+                <div class="card-body-fs">
+
+                    <canvas id="screeningTrendChart"
+                            height="120"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+            RISK DISTRIBUTION
+        =========================================== -->
+
+        <div class="col-xl-4">
+
+            <div class="card-chart">
+
+                <div class="card-header-fs">
+
+                    <div>
+
+                        <h5 class="card-title">
+
+                            Risk Distribution
+
+                        </h5>
+
+                        <small class="card-subtitle">
+
+                            Screening results by risk level
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body-fs text-center">
+
+                    <canvas id="riskChart"
+                            height="240"></canvas>
+
+                    <hr>
+
+                    <div class="row text-center mt-3">
+
+                        <div class="col-3">
+
+                            <h6 class="text-danger">
+
+                                27
+
+                            </h6>
+
+                            <small>
+
+                                High
+
+                            </small>
+
+                        </div>
+
+                        <div class="col-3">
+
+                            <h6 class="text-warning">
+
+                                63
+
+                            </h6>
+
+                            <small>
+
+                                Medium
+
+                            </small>
+
+                        </div>
+
+                        <div class="col-3">
+
+                            <h6 class="text-primary">
+
+                                121
+
+                            </h6>
+
+                            <small>
+
+                                Low
+
+                            </small>
+
+                        </div>
+
+                        <div class="col-3">
+
+                            <h6 class="text-success">
+
+                                4,312
+
+                            </h6>
+
+                            <small>
+
+                                Clear
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+        RECENT SCREENING REQUESTS
+    ====================================================== -->
+
+    <div class="row mb-4">
+
+        <div class="col-12">
+
+            <div class="card-table">
+
+                <div class="card-header-fs">
+
+                    <div>
+
+                        <h5 class="card-title">
+
+                            Recent Screening Requests
+
+                        </h5>
+
+                        <small class="card-subtitle">
+
+                            Latest customer screening activities
+
+                        </small>
+
+                    </div>
+
+                    <div class="d-flex gap-2">
+
+                        <button class="btn-fs btn-fs-outline">
+
+                            <i class="bi bi-funnel"></i>
+
+                            Filter
+
+                        </button>
+
+                        <button class="btn-fs btn-fs-primary">
+
+                            View All
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="table-responsive-fs">
+
+                    <table class="table-fs">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Request ID</th>
+
+                                <th>Customer</th>
+
+                                <th>Screening Type</th>
+
+                                <th>Risk</th>
+
+                                <th>Status</th>
+
+                                <th>Assigned To</th>
+
+                                <th>Date</th>
+
+                                <th class="text-center">Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td><strong>SCR000123</strong></td>
+
+                                <td>John Doe</td>
+
+                                <td>Name Screening</td>
+
+                                <td>
+                                    <span class="badge-fs badge-high">
+                                        HIGH
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge-fs badge-processing">
+                                        Processing
+                                    </span>
+                                </td>
+
+                                <td>Raphael Ndolo</td>
+
+                                <td>25 Jun 2026</td>
+
+                                <td>
+
+                                    <div class="table-actions justify-content-center">
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </button>
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-pencil"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>SCR000124</strong></td>
+
+                                <td>Jane Smith</td>
+
+                                <td>Batch Screening</td>
+
+                                <td>
+
+                                    <span class="badge-fs badge-medium">
+
+                                        MEDIUM
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <span class="badge-fs badge-pending">
+
+                                        Pending
+
+                                    </span>
+
+                                </td>
+
+                                <td>Mary Wanjiku</td>
+
+                                <td>25 Jun 2026</td>
+
+                                <td>
+
+                                    <div class="table-actions justify-content-center">
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </button>
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-pencil"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>SCR000125</strong></td>
+
+                                <td>Michael Brown</td>
+
+                                <td>Entity Screening</td>
+
+                                <td>
+
+                                    <span class="badge-fs badge-low">
+
+                                        LOW
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <span class="badge-fs badge-completed">
+
+                                        Completed
+
+                                    </span>
+
+                                </td>
+
+                                <td>David Kimani</td>
+
+                                <td>24 Jun 2026</td>
+
+                                <td>
+
+                                    <div class="table-actions justify-content-center">
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </button>
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-download"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>SCR000126</strong></td>
+
+                                <td>ABC Holdings Ltd</td>
+
+                                <td>Entity Screening</td>
+
+                                <td>
+
+                                    <span class="badge-fs badge-high">
+
+                                        HIGH
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <span class="badge-fs badge-processing">
+
+                                        Under Review
+
+                                    </span>
+
+                                </td>
+
+                                <td>Grace Njeri</td>
+
+                                <td>24 Jun 2026</td>
+
+                                <td>
+
+                                    <div class="table-actions justify-content-center">
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </button>
+
+                                        <button class="table-action">
+
+                                            <i class="bi bi-pencil-square"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="table-footer">
+
+                    <small>
+
+                        Showing 1 - 4 of 4,523 Screening Requests
+
+                    </small>
+
+                    <div class="pagination-fs">
+
+                        <a href="#">
+
+                            <i class="bi bi-chevron-left"></i>
+
+                        </a>
+
+                        <a href="#" class="active">
+
+                            1
+
+                        </a>
+
+                        <a href="#">
+
+                            2
+
+                        </a>
+
+                        <a href="#">
+
+                            3
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-chevron-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+        DASHBOARD WIDGETS
+    ====================================================== -->
+
+    <div class="row g-4 mb-4">
+
+        <!-- ==========================================
+            RECENT ACTIVITY
+        =========================================== -->
+
+        <div class="col-xl-4">
+
+            <div class="card-details">
+
+                <div class="card-header-fs">
+
+                    <div>
+
+                        <h5 class="card-title">
+
+                            Recent Activity
+
+                        </h5>
+
+                        <small class="card-subtitle">
+
+                            Latest platform events
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body-fs">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot bg-primary"></div>
+
+                        <div>
+
+                            <strong>John Doe screened</strong>
+
+                            <div class="text-muted">
+
+                                Name Screening completed successfully.
+
+                            </div>
+
+                            <small>
+
+                                09:12 AM
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot bg-warning"></div>
+
+                        <div>
+
+                            <strong>Case Assigned</strong>
+
+                            <div class="text-muted">
+
+                                Case #CASE-1024 assigned to Mary Wanjiku.
+
+                            </div>
+
+                            <small>
+
+                                09:48 AM
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot bg-success"></div>
+
+                        <div>
+
+                            <strong>Batch Screening Completed</strong>
+
+                            <div class="text-muted">
+
+                                248 customers screened successfully.
+
+                            </div>
+
+                            <small>
+
+                                10:21 AM
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot bg-danger"></div>
+
+                        <div>
+
+                            <strong>High Risk Match</strong>
+
+                            <div class="text-muted">
+
+                                New high-risk customer match detected.
+
+                            </div>
+
+                            <small>
+
+                                11:04 AM
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================================
+            SYSTEM HEALTH
+        =========================================== -->
+
+        <div class="col-xl-4">
+
+            <div class="card-details">
+
+                <div class="card-header-fs">
+
+                    <h5 class="card-title">
+
+                        System Health
+
+                    </h5>
+
+                </div>
+
+                <div class="card-body-fs">
+
+                    <div class="d-flex justify-content-between mb-3">
+
+                        <span>Refinitiv API</span>
+
+                        <span class="badge-fs badge-completed">
+
+                            Online
+
+                        </span>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+
+                        <span>Azure AD</span>
+
+                        <span class="badge-fs badge-completed">
+
+                            Connected
+
+                        </span>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+
+                        <span>Database</span>
+
+                        <span class="badge-fs badge-completed">
+
+                            Healthy
+
+                        </span>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+
+                        <span>Processing Queue</span>
+
+                        <span class="badge-fs badge-processing">
+
+                            Running
+
+                        </span>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+
+                        <span>Scheduler</span>
+
+                        <span class="badge-fs badge-completed">
+
+                            Active
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================================
+            MY WORK QUEUE
+        =========================================== -->
+
+        <div class="col-xl-4">
+
+            <div class="card-details">
+
+                <div class="card-header-fs">
+
+                    <h5 class="card-title">
+
+                        My Work Queue
+
+                    </h5>
+
+                </div>
+
+                <div class="card-body-fs">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+
+                        <div>
+
+                            Pending Reviews
+
+                        </div>
+
+                        <strong>
+
+                            18
+
+                        </strong>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+
+                        <div>
+
+                            Assigned Cases
+
+                        </div>
+
+                        <strong>
+
+                            7
+
+                        </strong>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+
+                        <div>
+
+                            High Risk Cases
+
+                        </div>
+
+                        <strong class="text-danger">
+
+                            3
+
+                        </strong>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+
+                        <div>
+
+                            SLA Due Today
+
+                        </div>
+
+                        <strong class="text-warning">
+
+                            5
+
+                        </strong>
+
+                    </div>
+
+                    <div class="d-grid">
+
+                        <button class="btn-fs btn-fs-primary">
+
+                            <i class="bi bi-arrow-right-circle"></i>
+
+                            Open My Queue
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    </main>
+
+    </div>
+
+    </div>
+<script src="assets/js/vendor/jquery/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendor/chartjs/chart.umd.min.js"></script>
+
+<script src="assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
