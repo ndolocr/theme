@@ -1,0 +1,343 @@
+/*====================================================================
+    Finserve UI Framework
+    utilities.css
+
+    Reusable Utility Classes
+====================================================================*/
+
+
+/*==================================================
+    DISPLAY
+==================================================*/
+
+.fs-block{
+    display:block;
+}
+
+.fs-inline{
+    display:inline;
+}
+
+.fs-inline-block{
+    display:inline-block;
+}
+
+.fs-flex{
+    display:flex;
+}
+
+.fs-inline-flex{
+    display:inline-flex;
+}
+
+.fs-grid{
+    display:grid;
+}
+
+
+/*==================================================
+    FLEX
+==================================================*/
+
+.fs-flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.fs-flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.fs-flex-around{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.fs-flex-end{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.fs-align-center{
+    align-items:center;
+}
+
+.fs-align-start{
+    align-items:flex-start;
+}
+
+.fs-align-end{
+    align-items:flex-end;
+}
+
+.fs-justify-center{
+    justify-content:center;
+}
+
+.fs-justify-between{
+    justify-content:space-between;
+}
+
+.fs-column{
+    flex-direction:column;
+}
+
+.fs-wrap{
+    flex-wrap:wrap;
+}
+
+
+/*==================================================
+    GAP
+==================================================*/
+
+.fs-gap-4{gap:4px;}
+.fs-gap-8{gap:8px;}
+.fs-gap-12{gap:12px;}
+.fs-gap-16{gap:16px;}
+.fs-gap-20{gap:20px;}
+.fs-gap-24{gap:24px;}
+.fs-gap-32{gap:32px;}
+
+
+/*==================================================
+    WIDTH
+==================================================*/
+
+.fs-w-25{
+    width:25%;
+}
+
+.fs-w-50{
+    width:50%;
+}
+
+.fs-w-75{
+    width:75%;
+}
+
+.fs-w-100{
+    width:100%;
+}
+
+
+/*==================================================
+    HEIGHT
+==================================================*/
+
+.fs-h-100{
+    height:100%;
+}
+
+.fs-vh-100{
+    height:100vh;
+}
+
+
+/*==================================================
+    MARGIN
+==================================================*/
+
+.fs-m-0{margin:0;}
+
+.fs-mt-4{margin-top:4px;}
+.fs-mt-8{margin-top:8px;}
+.fs-mt-12{margin-top:12px;}
+.fs-mt-16{margin-top:16px;}
+.fs-mt-20{margin-top:20px;}
+.fs-mt-24{margin-top:24px;}
+.fs-mt-32{margin-top:32px;}
+.fs-mt-40{margin-top:40px;}
+
+.fs-mb-4{margin-bottom:4px;}
+.fs-mb-8{margin-bottom:8px;}
+.fs-mb-12{margin-bottom:12px;}
+.fs-mb-16{margin-bottom:16px;}
+.fs-mb-20{margin-bottom:20px;}
+.fs-mb-24{margin-bottom:24px;}
+.fs-mb-32{margin-bottom:32px;}
+.fs-mb-40{margin-bottom:40px;}
+
+.fs-ml-auto{
+    margin-left:auto;
+}
+
+.fs-mr-auto{
+    margin-right:auto;
+}
+
+
+/*==================================================
+    PADDING
+==================================================*/
+
+.fs-p-0{padding:0;}
+
+.fs-p-8{padding:8px;}
+.fs-p-12{padding:12px;}
+.fs-p-16{padding:16px;}
+.fs-p-20{padding:20px;}
+.fs-p-24{padding:24px;}
+.fs-p-32{padding:32px;}
+
+.fs-px-16{
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.fs-px-24{
+    padding-left:24px;
+    padding-right:24px;
+}
+
+.fs-py-16{
+    padding-top:16px;
+    padding-bottom:16px;
+}
+
+.fs-py-24{
+    padding-top:24px;
+    padding-bottom:24px;
+}
+
+
+/*==================================================
+    TEXT
+==================================================*/
+
+.fs-text-left{
+    text-align:left;
+}
+
+.fs-text-center{
+    text-align:center;
+}
+
+.fs-text-right{
+    text-align:right;
+}
+
+
+/*==================================================
+    FONT WEIGHT
+==================================================*/
+
+.fs-fw-400{
+    font-weight:400;
+}
+
+.fs-fw-500{
+    font-weight:500;
+}
+
+.fs-fw-600{
+    font-weight:600;
+}
+
+.fs-fw-700{
+    font-weight:700;
+}
+
+
+/*==================================================
+    BORDER RADIUS
+==================================================*/
+
+.fs-radius-sm{
+    border-radius:var(--radius-sm);
+}
+
+.fs-radius-md{
+    border-radius:var(--radius-md);
+}
+
+.fs-radius-lg{
+    border-radius:var(--radius-lg);
+}
+
+.fs-radius-xl{
+    border-radius:var(--radius-xl);
+}
+
+
+/*==================================================
+    SHADOWS
+==================================================*/
+
+.fs-shadow-sm{
+    box-shadow:var(--shadow-sm);
+}
+
+.fs-shadow-md{
+    box-shadow:var(--shadow-md);
+}
+
+.fs-shadow-lg{
+    box-shadow:var(--shadow-lg);
+}
+
+
+/*==================================================
+    CURSOR
+==================================================*/
+
+.fs-pointer{
+    cursor:pointer;
+}
+
+
+/*==================================================
+    POSITION
+==================================================*/
+
+.fs-relative{
+    position:relative;
+}
+
+.fs-absolute{
+    position:absolute;
+}
+
+.fs-fixed{
+    position:fixed;
+}
+
+
+/*==================================================
+    OVERFLOW
+==================================================*/
+
+.fs-overflow-hidden{
+    overflow:hidden;
+}
+
+.fs-overflow-auto{
+    overflow:auto;
+}
+
+
+/*==================================================
+    VISIBILITY
+==================================================*/
+
+.fs-hidden{
+    display:none !important;
+}
+
+.fs-visible{
+    display:block !important;
+}
+
+
+/*==================================================
+    ANIMATION
+==================================================*/
+
+.fs-transition{
+    transition:var(--transition);
+}
