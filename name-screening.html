@@ -201,63 +201,42 @@
                         <div class="screening-progress">
 
                             <div class="progress-step active">
-
-                                <div class="progress-circle">
-
-                                    1
-
-                                </div>
-
+                        
+                                <div class="progress-circle">1</div>
+                        
                                 <div>
-
-                                    <h6>Screening Input</h6>
-
-                                    <small>Enter customer details</small>
-
+                                    <h6>Search</h6>
+                                    <small>Create Screening Request</small>
                                 </div>
-
+                        
                             </div>
-
+                        
                             <div class="progress-line"></div>
-
+                        
                             <div class="progress-step">
-
-                                <div class="progress-circle">
-
-                                    2
-
-                                </div>
-
+                        
+                                <div class="progress-circle">2</div>
+                        
                                 <div>
-
-                                    <h6>Review & Submit</h6>
-
-                                    <small>Validate request</small>
-
+                                    <h6>Matches</h6>
+                                    <small>Review Potential Matches</small>
                                 </div>
-
+                        
                             </div>
-
+                        
                             <div class="progress-line"></div>
-
+                        
                             <div class="progress-step">
-
-                                <div class="progress-circle">
-
-                                    3
-
-                                </div>
-
+                        
+                                <div class="progress-circle">3</div>
+                        
                                 <div>
-
-                                    <h6>Results</h6>
-
-                                    <small>View matches</small>
-
+                                    <h6>Investigation</h6>
+                                    <small>Review & Resolution</small>
                                 </div>
-
+                        
                             </div>
-
+                        
                         </div>
 
                         <!-- ==========================================================
@@ -286,6 +265,24 @@
 
             </p>
 
+        </div>
+
+        <div class="screening-tip">
+
+            <i class="bi bi-info-circle-fill"></i>
+        
+            <div>
+        
+                <strong>Tip</strong>
+        
+                <p>
+                    Only the customer name is required. Adding additional information
+                    such as date of birth, nationality and identification documents
+                    significantly improves screening accuracy.
+                </p>
+        
+            </div>
+        
         </div>
 
     </div>
@@ -326,18 +323,271 @@
 
                 <i class="bi bi-chevron-down"></i>
 
-                Advanced Search
+                Additional Screening Information
 
             </button>
 
         </div>
 
-        <div
-            class="collapse"
-            id="advancedSearch">
+        <div class="collapse" id="advancedSearch">
 
-            <!-- Advanced search goes here -->
+            <div class="advanced-search">
+                
+                <div class="advanced-grid">
+                    <!-- Customer Information -->
+        
+                    <div class="advanced-section">
+            
+                        <h5 class="section-title"> <i class="bi bi-person-vcard"></i>Customer Information</h5>
+            
+                        
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Gender
+            
+                                    </label>
+            
+                                    <select class="form-control-fs">
+            
+                                        <option value="">Any</option>
+            
+                                        <option>Male</option>
+            
+                                        <option>Female</option>
+            
+                                    </select>
+            
+                                </div>
+            
+                            
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Date of Birth
+            
+                                    </label>
+            
+                                    <input
+                                        type="date"
+                                        class="form-control-fs">
+            
+                                </div>
+            
+                            
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Nationality
+            
+                                    </label>
+            
+                                    <input
+                                        type="text"
+                                        class="form-control-fs">
+            
+                                </div>
+            
+                            
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Country of Birth
+            
+                                    </label>
+            
+                                    <input
+                                        type="text"
+                                        class="form-control-fs">
+            
+                                </div>
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Country of Residence
+            
+                                    </label>
+            
+                                    <input
+                                        type="text"
+                                        class="form-control-fs">
+            
+                                </div>
+            
+                            
+            
+                        
+            
+                    </div>
+            
+                    <!-- Identification -->
+            
+                    <div class="advanced-section">
+            
+                        <h5 class="section-title">
+            
+                            <i class="bi bi-card-text"></i>
+            
+                            Identification
+            
+                        </h5>
+            
+                        
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Document Type
+            
+                                    </label>
+            
+                                    <select class="form-control-fs">
+            
+                                        <option></option>
+            
+                                        <option>Passport</option>
+            
+                                        <option>National ID</option>
+            
+                                        <option>Driving Licence</option>
+            
+                                    </select>
+            
+                                </div>
+            
+                            
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Document Number
+            
+                                    </label>
+            
+                                    <input
+                                        type="text"
+                                        class="form-control-fs">
+            
+                                </div>
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Document Country
+            
+                                    </label>
+            
+                                    <input
+                                        type="text"
+                                        class="form-control-fs">
+            
+                                </div>
+            
+                            
+            
+                        
+            
+                    </div>
+            
+                    <!-- Screening Configuration -->
+            
+                    <div class="advanced-section">
+            
+                        <h5 class="section-title">
+            
+                            <i class="bi bi-sliders"></i>
+            
+                            Screening Configuration
+            
+                        </h5>
+            
+                        
+            
+                            
+            
+                                <div class="fs-form-group">
+            
+                                    <label class="fs-label">
+            
+                                        Entity Type
+            
+                                    </label>
+            
+                                    <select class="form-control-fs">
+            
+                                        <option selected>Individual</option>
+            
+                                        <option>Organisation</option>
+            
+                                    </select>
+            
+                                </div>
+            
+                                <div class="fs-form-group">
 
+                                    <label class="fs-label">
+                                
+                                        Name Transposition
+                                
+                                    </label>
+                                
+                                    <div class="form-check form-switch">
+                                
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="nameTransposition">
+                                
+                                        <label
+                                            class="form-check-label"
+                                            for="nameTransposition">
+                                
+                                            Enable name transposition
+                                
+                                        </label>
+                                
+                                    </div>
+                                
+                                </div>
+                            
+            
+                        
+            
+                    </div>
+                </div>
+        </div> 
+        
+            </div>
+        
         </div>
 
         <div class="search-footer">
@@ -355,6 +605,414 @@
     </div>
 
 </section>
+
+<!--=========================================================
+    CASE SUMMARY
+==========================================================-->
+
+<section class="case-summary-card d-none">
+
+    <div class="section-header">
+
+        <div>
+
+            <h3>
+
+                <i class="bi bi-folder2-open"></i>
+
+                Case Summary
+
+            </h3>
+
+            <p>
+
+                Summary of the screening request and current case status.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="case-summary-grid">
+
+        <div class="case-stat">
+
+            <span>Status</span>
+
+            <strong class="badge badge-warning">
+
+                Initial
+
+            </strong>
+
+        </div>
+
+        <div class="case-stat">
+
+            <span>Lifecycle</span>
+
+            <strong>
+
+                Active
+
+            </strong>
+
+        </div>
+
+        <div class="case-stat">
+
+            <span>Matches</span>
+
+            <strong>
+
+                2
+
+            </strong>
+
+        </div>
+
+        <div class="case-stat">
+
+            <span>Outstanding Actions</span>
+
+            <strong class="text-danger">
+
+                Yes
+
+            </strong>
+
+        </div>
+
+        <div class="case-stat wide">
+
+            <span>Case ID</span>
+
+            <strong>
+
+                5jb830nccrrx1kst7jjsbtw5q
+
+            </strong>
+
+        </div>
+
+        <div class="case-stat wide">
+
+            <span>Case Reference</span>
+
+            <strong>
+
+                5jb830nccrrx1kst7jjsbtw5r
+
+            </strong>
+
+        </div>
+
+        <div class="case-stat">
+
+            <span>Created</span>
+
+            <strong>
+
+                26 Jun 2026 09:08
+
+            </strong>
+
+        </div>
+
+        <div class="case-stat">
+
+            <span>Last Updated</span>
+
+            <strong>
+
+                26 Jun 2026 09:08
+
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================================
+    MATCH RESULTS
+==========================================================-->
+
+<section class="match-results-card d-none">
+
+    <div class="section-header">
+
+        <div>
+
+            <h3>
+
+                <i class="bi bi-list-check"></i>
+
+                Match Results
+
+            </h3>
+
+            <p>
+
+                Potential matches returned from the screening search.
+
+            </p>
+
+        </div>
+
+        <div class="section-actions">
+
+            <button class="btn-fs btn-fs-outline">
+
+                <i class="bi bi-funnel"></i>
+
+                Filter
+
+            </button>
+
+            <button class="btn-fs btn-fs-outline">
+
+                <i class="bi bi-download"></i>
+
+                Export
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <table class="match-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Score</th>
+
+                <th>Matched Person</th>
+
+                <th>Category</th>
+
+                <th>Country</th>
+
+                <th>PEP</th>
+
+                <th>Status</th>
+
+                <th width="120">Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>
+
+                    <div class="score-circle">
+
+                        100%
+
+                    </div>
+
+                </td>
+
+                <td>
+
+                    <strong>
+
+                        William Samoei RUTO
+
+                    </strong>
+
+                    <br>
+
+                    <small>
+
+                        RUTO,William
+
+                    </small>
+
+                </td>
+
+                <td>
+
+                    <span class="category-badge political">
+
+                        Political Individual
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    🇰🇪 Kenya
+
+                </td>
+
+                <td>
+
+                    <span class="pep-badge">
+
+                        Active
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <span class="status-pill pending">
+
+                        Pending
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <button class="btn-fs btn-fs-primary btn-sm btn-review">
+
+                        Review
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <div class="score-circle">
+
+                        100%
+
+                    </div>
+
+                </td>
+
+                <td>
+
+                    <strong>
+
+                        William Kipkempoi RUTO
+
+                    </strong>
+
+                    <br>
+
+                    <small>
+
+                        RUTO,William
+
+                    </small>
+
+                </td>
+
+                <td>
+
+                    <span class="category-badge">
+
+                        Individual
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    🇰🇪 Kenya
+
+                </td>
+
+                <td>
+
+                    <span class="pep-badge">
+
+                        Active
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <span class="status-pill pending">
+
+                        Pending
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <button class="btn-fs btn-fs-primary btn-sm btn-review">
+
+                        Review
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+
+<!-- ==========================================================
+     INVESTIGATION DRAWER
+=========================================================== -->
+
+<aside class="investigation-drawer" id="investigationDrawer">
+
+    <div class="drawer-header">
+
+        <div>
+
+            <h3>
+
+                Investigation
+
+            </h3>
+
+            <small>
+
+                Match Details
+
+            </small>
+
+        </div>
+
+        <button class="drawer-close">
+
+            <i class="bi bi-x-lg"></i>
+
+        </button>
+
+    </div>
+
+    <div class="drawer-body">
+
+        <!-- Filled dynamically -->
+
+    </div>
+
+</aside>
                     </div>
 
                 </main>
@@ -363,9 +1021,8 @@
 
         </div>
 
-        <script src="assets/js/vendor/jquery/jquery-3.7.1.min.js"></script>
-        <script
-            src="assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery-4.0.0.min.js"></script>
+        <script src="assets/js/bootstrap/bootstrap.bundle.min.js"> </script>
         <script src="assets/js/pages/name-screening.js"></script>
 
     </body>
