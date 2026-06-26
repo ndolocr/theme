@@ -35,7 +35,7 @@
     CARD HEADER
 ==========================================================*/
 
-.card-header-fs{
+/* .card-header-fs{
 
     display:flex;
 
@@ -47,10 +47,56 @@
 
     border-bottom:1px solid var(--fs-divider);
 
+} */
+
+.card-header-fs{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:22px 28px;
+
+    border-bottom:1px solid var(--fs-border);
+
+}
+
+.card-header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.card-header-icon{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#FFF4F4;
+
+    color:var(--fs-primary);
+
+    font-size:22px;
+
 }
 
 .card-title{
-
+    margin:0;
     font-size:18px;
 
     font-weight:600;
@@ -60,13 +106,21 @@
 }
 
 .card-subtitle{
-
+    margin-top:3px;
     font-size:13px;
 
     color:var(--fs-text-light);
+    color:var(--fs-text-muted);
 
 }
 
+.lookup-card .btn-fs{
+
+    height:46px;
+
+    width:100%;
+
+}
 
 /*==========================================================
     CARD BODY
