@@ -9,7 +9,7 @@
     APPLICATION
 ==========================================================*/
 
-.fs-app{
+/* .fs-app{
 
     display:flex;
 
@@ -17,14 +17,25 @@
 
     background:var(--fs-background);
 
-}
+} */
 
+.fs-app{
+
+    display:grid;
+
+    grid-template-columns:var(--sidebar-width) 1fr;
+
+    min-height:100vh;
+
+    background:var(--fs-background);
+
+}
 
 /*==========================================================
     CONTENT
 ==========================================================*/
 
-.fs-content{
+/* .fs-content{
 
     flex:1;
 
@@ -37,6 +48,18 @@
     margin-left:var(--sidebar-width);
 
     transition:all .25s ease;
+
+} */
+
+.fs-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-width:0;
+
+    min-height:100vh;
 
 }
 

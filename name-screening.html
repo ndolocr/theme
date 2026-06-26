@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Name Screening | Finserve Screening Platform</title>
+
+        <link rel="stylesheet"
+            href="assets/css/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="assets/css/vendor/bootstrap-icons/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="assets/css/core/variables.css">
+        <link rel="stylesheet" href="assets/css/core/base.css">
+        <link rel="stylesheet" href="assets/css/core/typography.css">
+        <link rel="stylesheet" href="assets/css/core/utilities.css">
+
+        <link rel="stylesheet" href="assets/css/components/buttons.css">
+        <link rel="stylesheet" href="assets/css/components/cards.css">
+        <link rel="stylesheet" href="assets/css/components/forms.css">
+        <link rel="stylesheet" href="assets/css/components/tables.css">
+
+        <link rel="stylesheet" href="assets/css/layout/sidebar.css">
+        <link rel="stylesheet" href="assets/css/layout/navbar.css">
+        <link rel="stylesheet" href="assets/css/layout/layout.css">
+
+        <link rel="stylesheet" href="assets/css/pages/name-screening.css">
+    </head>
+
+    <body>
+
+        <div class="fs-app">
+
+            <!-- Sidebar -->
+            <aside class="fs-sidebar">
+                <div class="sidebar-logo">
+                    <img src="assets/images/logos/logo.svg" alt="Finserve">
+                </div>
+
+                <div class="sidebar-menu">
+
+                    <div class="sidebar-title">Main Menu</div>
+
+                    <a href="dashboard.html" class="sidebar-link">
+                        <i class="bi bi-grid-fill"></i><span>Dashboard</span>
+                    </a>
+
+                    <div class="sidebar-title">Screening</div>
+
+                    <a href="name-screening.html" class="sidebar-link active">
+                        <i class="bi bi-search"></i><span>Name Screening</span>
+                    </a>
+
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-people"></i><span>Batch
+                            Screening</span></a>
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-building"></i><span>Entity
+                            Screening</span></a>
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-plug"></i><span>API
+                            Screening</span></a>
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-clock-history"></i><span>Screening
+                            History</span></a>
+
+                    <div class="sidebar-title">Administration</div>
+
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-people-fill"></i><span>Users</span></a>
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-shield-lock"></i><span>Roles &
+                            Permissions</span></a>
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-journal-text"></i><span>Audit
+                            Logs</span></a>
+                    <a href="#" class="sidebar-link"><i
+                            class="bi bi-gear"></i><span>System
+                            Settings</span></a>
+
+                </div>
+
+                <div class="sidebar-footer">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-box-arrow-left"></i><span>Logout</span>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="fs-content">
+
+                <!-- ======================================
+                    NAVBAR
+                ======================================= -->
+                <header class="fs-navbar">
+                    <div class="nav-left">
+                        <button class="btn-fs btn-fs-light btn-sidebar-toggle">
+                            <i class="bi bi-list"></i></button>
+
+                        <div class="nav-search">
+                            <i class="bi bi-search"></i>
+                            <input type="text"
+                                placeholder="Search requests, customers, cases...">
+                        </div>
+
+                    </div>
+
+                    <div class="nav-right">
+
+                        <button class="nav-icon">
+
+                            <i class="bi bi-bell"></i>
+
+                        </button>
+
+                        <button class="nav-icon">
+
+                            <i class="bi bi-gear"></i>
+
+                        </button>
+
+                        <div class="user-profile">
+
+                            <img
+                                src="assets/images/avatar.png"
+                                alt="User">
+
+                            <div>
+
+                                <strong>
+
+                                    Raphael Ndolo
+
+                                </strong>
+
+                                <small>
+
+                                    Compliance Analyst
+
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </header>
+
+                <main class="fs-main">
+
+                    <div class="fs-container">
+
+
+                        <div class="page-header">
+
+                            <div>
+
+                                <div class="page-breadcrumb">
+
+                                    Screening
+                                    <i class="bi bi-chevron-right"></i>
+                                    <span>Name Screening</span>
+
+                                </div>
+
+                                <h1 class="page-title">
+
+                                    Name Screening
+
+                                </h1>
+
+                                <p class="page-description">
+
+                                    Screen individuals against sanctions lists,
+                                    politically exposed persons (PEPs),
+                                    adverse media and internal watchlists.
+
+                                </p>
+
+                            </div>
+
+                            <div class="page-actions">
+
+                                <button class="btn-fs btn-fs-outline">
+
+                                    <i class="bi bi-bookmark"></i>
+
+                                    Saved Searches
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ==========================================================
+                            SCREENING PROGRESS
+                        =========================================================== -->
+
+                        <div class="screening-progress">
+
+                            <div class="progress-step active">
+
+                                <div class="progress-circle">
+
+                                    1
+
+                                </div>
+
+                                <div>
+
+                                    <h6>Screening Input</h6>
+
+                                    <small>Enter customer details</small>
+
+                                </div>
+
+                            </div>
+
+                            <div class="progress-line"></div>
+
+                            <div class="progress-step">
+
+                                <div class="progress-circle">
+
+                                    2
+
+                                </div>
+
+                                <div>
+
+                                    <h6>Review & Submit</h6>
+
+                                    <small>Validate request</small>
+
+                                </div>
+
+                            </div>
+
+                            <div class="progress-line"></div>
+
+                            <div class="progress-step">
+
+                                <div class="progress-circle">
+
+                                    3
+
+                                </div>
+
+                                <div>
+
+                                    <h6>Results</h6>
+
+                                    <small>View matches</small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ==========================================================
+     SEARCH PANEL
+=========================================================== -->
+
+<section class="search-panel">
+
+    <div class="search-header">
+
+        <div>
+
+            <h3>
+
+                <i class="bi bi-search"></i>
+
+                New Screening Request
+
+            </h3>
+
+            <p>
+
+                Screen customers against sanctions lists,
+                politically exposed persons, adverse media
+                and internal watchlists.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="search-body">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="fs-form-group">
+
+                    <label class="fs-label">
+
+                        Customer Name
+                        <span class="required">*</span>
+
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control-fs form-control-lg"
+                        placeholder="Enter customer full name">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="advanced-search-toggle">
+
+            <button
+                class="btn-fs btn-fs-link"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#advancedSearch">
+
+                <i class="bi bi-chevron-down"></i>
+
+                Advanced Search
+
+            </button>
+
+        </div>
+
+        <div
+            class="collapse"
+            id="advancedSearch">
+
+            <!-- Advanced search goes here -->
+
+        </div>
+
+        <div class="search-footer">
+
+            <button class="btn-fs btn-fs-primary btn-lg">
+
+                <i class="bi bi-search"></i>
+
+                Screen Customer
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+                    </div>
+
+                </main>
+
+            </div>
+
+        </div>
+
+        <script src="assets/js/vendor/jquery/jquery-3.7.1.min.js"></script>
+        <script
+            src="assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/pages/name-screening.js"></script>
+
+    </body>
+</html>

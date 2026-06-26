@@ -1,0 +1,398 @@
+/*=========================================================================
+    Finserve UI Framework
+    name-screening.css
+==========================================================================*/
+
+/*=========================================================================
+    PAGE
+==========================================================================*/
+
+.name-screening-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+
+/*=========================================================================
+    PAGE HEADER
+==========================================================================*/
+
+.page-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/*=========================================================================
+    LOOKUP CARD
+==========================================================================*/
+
+.lookup-card {
+
+    margin-bottom: 24px;
+
+}
+
+.lookup-card .btn-fs {
+
+    height: 46px;
+
+}
+
+
+/*=========================================================================
+    SCREENING REQUEST
+==========================================================================*/
+
+.screening-request {
+
+    margin-bottom: 24px;
+
+}
+
+
+/*=========================================================================
+    CUSTOMER INFORMATION
+==========================================================================*/
+
+.customer-information {
+
+    margin-bottom: 24px;
+
+}
+
+.customer-information .row {
+
+    row-gap: 18px;
+
+}
+
+
+/*=========================================================================
+    SCREENING OPTIONS
+==========================================================================*/
+
+.screening-options {
+
+    margin-bottom: 24px;
+
+}
+
+
+/*=========================================================================
+    OPTION CARD
+==========================================================================*/
+
+.screening-option {
+
+    background: #FFFFFF;
+
+    border: 1px solid var(--fs-border);
+
+    border-radius: 16px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+
+    height: 100%;
+    position:relative;
+
+}
+
+.screening-option::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:16px;
+
+    transition:.25s;
+
+}
+
+.screening-option.active::after{
+
+    border:2px solid var(--fs-primary);
+
+}
+
+.screening-option:hover {
+
+    border-color: var(--fs-primary);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .05);
+
+}
+
+.screening-option.active {
+
+    border: 2px solid var(--fs-primary);
+
+    background: #FFF6F6;
+
+}
+
+.screening-option i {
+
+    font-size: 34px;
+
+    color: var(--fs-primary);
+
+    margin-bottom: 16px;
+
+}
+
+.screening-option h6 {
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+}
+
+.screening-option p {
+
+    font-size: 13px;
+
+    color: var(--fs-text-muted);
+
+    margin-bottom: 16px;
+
+}
+
+
+/*=========================================================================
+    ACTIONS
+==========================================================================*/
+
+.screening-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+}
+
+
+/*=========================================================================
+    RESULTS
+==========================================================================*/
+
+.screening-results {
+
+    display: none;
+
+    margin-top: 36px;
+
+}
+
+.screening-results.show{
+
+    display:block;
+
+    animation:fadeUp .35s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+/*=========================================================================
+    DECISION BANNER
+==========================================================================*/
+
+.decision-banner {
+
+    border-radius: 16px;
+
+    padding: 22px 26px;
+
+    margin-bottom: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.decision-banner.success {
+
+    background: #ECFDF5;
+
+    border: 1px solid #BBF7D0;
+
+}
+
+.decision-banner.warning {
+
+    background: #FFF7ED;
+
+    border: 1px solid #FED7AA;
+
+}
+
+.decision-banner.danger {
+
+    background: #FEF2F2;
+
+    border: 1px solid #FECACA;
+
+}
+
+.decision-banner i {
+
+    font-size: 40px;
+
+}
+
+.decision-banner.success i {
+
+    color: #16A34A;
+
+}
+
+.decision-banner.warning i {
+
+    color: #EA580C;
+
+}
+
+.decision-banner.danger i {
+
+    color: #DC2626;
+
+}
+
+
+/*=========================================================================
+    SUMMARY CARDS
+==========================================================================*/
+
+.summary-card {
+
+    text-align: center;
+
+    padding: 24px;
+
+}
+
+.summary-card h2 {
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    margin: 10px 0;
+
+}
+
+.summary-card span {
+
+    color: var(--fs-text-muted);
+
+}
+
+
+/*=========================================================================
+    MATCH TABLE
+==========================================================================*/
+
+.match-score {
+
+    font-weight: 700;
+
+}
+
+.match-name {
+
+    font-weight: 600;
+
+}
+
+.match-source {
+
+    color: var(--fs-text-muted);
+
+}
+
+
+/*=========================================================================
+    MOBILE
+==========================================================================*/
+
+@media (max-width:992px) {
+
+    .screening-actions {
+
+        flex-direction: column;
+
+    }
+
+    .screening-actions .btn-fs {
+
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .decision-banner {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .screening-option {
+
+        margin-bottom: 16px;
+
+    }
+
+}
